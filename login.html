@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaunLwin's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #2600ff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #ffffff, #0f4c6b);
+            color: #27084b;
+            padding: 60px 20px;
+            border-bottom: 10px solid #1ccc0c;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        header nav {
+            margin-top: 20px;
+        }
+        header nav a {
+            color: #3cff00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #66ff00;
+        }
+        section {
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 15px;
+            background: #260b33;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #33ff00;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #c0cfbc;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #1a0a49;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1fff02, #e3e9e2);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background: #2e0846;
+            color: #c8ff00;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact a {
+            color: #73ff00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #48ff00;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #160909;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kaung Lwin's Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#Goals">Goals</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m [Kaung Lwin], a high school student with a growing interest in web development. Currently, I’m selfstudying HTML as part of my journey into coding and web design.
+                Though I’m new to this field, I’m excited about learning the fundamentals of web development and exploring how to create and design websites. I’ve been working on small projects, such as building my own personal website, to apply what I’m learning and gain practical experience.
+                
+                I’m particularly interested in [creating interactive web pages or learning about CSS]. I’m eager to expand my knowledge and skills in this area and I am open to exploring new learning opportunities.
+                
+                When I’m not studying HTML, I enjoy [Playing guitar,listening music etc..]. I believe that curiosity and dedication are key to success, and I bring this mindset to everything I do.
+                
+                Feel free to connect with me on [Instagram/Facebook/] or check out my projects. I’m excited about learning more and exploring the world of web development!
+                
+                </p>
+        </section>
+        
+        <section id="projects">
+            <h2>My Learning Goals</h2>
+            <p>As I continue my journey in web development, I’m focused on achieving several learning goals. Here’s what I’m currently working towards:</p>
+    
+            <div class="project-item">
+                <h3>Mastering HTML & CSS</h3>
+                <p>My current goal is to gain a solid understanding of HTML and CSS, including best practices for creating well-structured and visually appealing web pages</p>
+            </div>
+            <div class="project-item">
+                <h3>Building Interactive Web Elements</h3>
+                <p>I’m eager to learn how to create interactive web elements, such as forms and buttons, and integrate them into web pages to enhance user experience.</p>
+            </div>.
+            <div class="project-item">
+                <h3>Exploring JavaScript Basics</h3>
+                <p>Once I’m comfortable with HTML and CSS, I plan to start learning JavaScript to add dynamic functionality to my web projects.</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email at <a href="mailto:kaunghsukyaw@gmail.com">kaunghsukyaw@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>.</p>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 [Kaung Lwin]. All rights reserved.</p>
+        </footer>
